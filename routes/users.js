@@ -46,7 +46,6 @@ usersRouter.post('/', (req, res) => {
     }
 });
   
- /* 
 usersRouter.put('/:id', (req, res) => {
     let existingUser = null;
     let validationErrors = null;
@@ -70,7 +69,7 @@ usersRouter.put('/:id', (req, res) => {
         else res.status(500).send('Error updating a user.');
       });
   });
-  */
+
  
   usersRouter.delete('/:id', (req, res) => {
     Users.deleteUser(req.params.id)
